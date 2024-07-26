@@ -64,7 +64,7 @@ public class AddressBook {
         }
     }
 
-    /*public void deletePerson() {
+    public void deletePerson() {
         Scanner scanner=new Scanner(System.in);
         System.out.print("Enter first name : ");
         String fName=scanner.next();
@@ -81,6 +81,6 @@ public class AddressBook {
                 System.out.println("Person is not found.");
             }
         }
-    }*/
+    }
 
 }
