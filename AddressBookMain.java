@@ -41,7 +41,7 @@ public class AddressBookMain {
                     addressBook.editPerson();
                     break;
                 case 3:
-                    
+                    addressBook.deletePerson();
                 case 4:
                 case 5:
                 default:
