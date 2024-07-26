@@ -32,7 +32,9 @@ public class AddressBook {
         contact.setPhoneNumber(scanner.nextLong());
         System.out.print("Enter your email : ");
         contact.setEmail(scanner.next());
-        addressBook.add(contact);
+
+        if(!(isExist(contact))) addressBook.add(contact);
+        else System.out.println(contact.getFirstName()+" "+contact.getLastName()+" is already exist.");
     }
 
     public void editPerson() {
@@ -81,6 +83,21 @@ public class AddressBook {
                 System.out.println("Person is not found.");
             }
         }
+    }
+
+    public boolean isExist(Contact newContact) {
+        int i=0;
+        for(Contact contact:this.addressBook) {
+            i++;
+            if(contact.getFirstName().equals(newContact.getFirstName())) {
+                if(contact.getLastName().equals(newContact.getLastName())) {
+                    return true;
+                }
+            } else if(i==addressBook.size()){
+                return false;
+            }
+        }
+        return false;
     }
 
 }

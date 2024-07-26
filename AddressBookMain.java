@@ -27,7 +27,6 @@ public class AddressBookMain {
             System.out.println("Enter 2 to edit existing person using their name.");
             System.out.println("Enter 3 to delete a person using their name.");
             System.out.println("Enter 4 to add multiple person to Address Book.");
-            System.out.println("Enter 5 ");
             System.out.println("Enter 6 to exit.");
             System.out.println("\n");
             System.out.print("Enter your option here : ");
@@ -50,16 +49,9 @@ public class AddressBookMain {
                         addressBook.addPerson();
                     }
                     break;
-                case 5:
                 default:
                     System.out.println("Enter the given options only.\n");
-
-
             }
-
-
         } while (i != 5);
-
-
     }
 }
