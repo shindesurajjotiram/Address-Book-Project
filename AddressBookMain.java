@@ -42,7 +42,14 @@ public class AddressBookMain {
                     break;
                 case 3:
                     addressBook.deletePerson();
+                    break;
                 case 4:
+                    System.out.print("Enter number of persons you whant to add : ");
+                    int noOfPersons=scanner.nextInt();
+                    for(int ii=0;ii<noOfPersons;ii++) {
+                        addressBook.addPerson();
+                    }
+                    break;
                 case 5:
                 default:
                     System.out.println("Enter the given options only.\n");
